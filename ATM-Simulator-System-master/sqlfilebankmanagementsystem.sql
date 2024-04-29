@@ -1,0 +1,16 @@
+create database bankmanagementsystem1;
+show databases; 
+use bankmanagementsystem1;
+create table signup(formno varchar(20),name varchar(20),fname varchar(20), dob  varchar(20), gender  varchar(20),email  varchar(30),marital  varchar(20),address  varchar(50),city  varchar(20),pincode  varchar(20), state  varchar(20));
+show tables;
+select * from signup;
+create table signup2(formno varchar(20),religion varchar(20),category varchar(20),income varchar(20),education varchar(20),occupation varchar(20),pan varchar(30),aadhar varchar(30),scitizen varchar(10),eaccount varchar(20));
+show tables;
+select * from signup2;
+create table signup3(formno varchar(20),atype varchar(40),cardno varchar(20),pin varchar(20),facility varchar(20));
+create table login(formno varchar(20),cardno varchar(20),pin varchar(20));
+show tables;
+select * from login;
+ALTER table signup3 modify column facility varchar(100);
+select* from signup3;
+select* from login;
